@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.myListeners"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.tutorialsninja.qa.testcases.Register">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Register -->
+      <class name="com.tutorialsninja.qa.testcases.Login">
+        <methods>
+          <include name="verifyloginwithvalidcredentials"/>
+          <include name="teardown"/>
+          <include name="DataDrivenTest"/>
+          <include name="setup"/>
+          <include name="verifyloginwithvalidemailandinvalidpassword"/>
+          <include name="verifyloginwithinvalidemailandvalidpassword"/>
+          <include name="verifyloginwithinvalidcredendials"/>
+          <include name="verifyloginwithoutprovidingemailandpassword"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
